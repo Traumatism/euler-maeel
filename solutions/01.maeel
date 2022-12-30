@@ -1,0 +1,12 @@
+let n 0
+0 true while do
+    n 1 + let n pop
+
+    n dup 5 % 0 = swap 3 % 0 = or if do
+        n +
+    end
+
+    n 999 = !
+end
+
+println pop
