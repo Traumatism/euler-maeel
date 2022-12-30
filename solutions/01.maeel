@@ -1,4 +1,5 @@
 let n 0
+
 0 true while do
     n 1 + let n pop
 

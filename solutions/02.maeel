@@ -15,4 +15,4 @@ true while do
     b 4000000 <
 end
 
-sum println
+sum println pop
