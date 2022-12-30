@@ -1,0 +1,18 @@
+let sum 0
+let a 1
+let b 2
+
+true while do
+    b 2 % 0 = if do
+        sum b + let sum pop
+    end
+
+    b let b_bak pop
+
+    b let a pop
+    b b_bak + let b pop
+
+    b 4000000 <
+end
+
+sum println
