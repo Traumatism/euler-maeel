@@ -3,7 +3,7 @@ let sum 0
 let a 1
 let b 2
 
-true while do
+b 4000000 while do
     b 2 % 0 = if do
         sum b + let sum pop
     end
