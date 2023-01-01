@@ -1,0 +1,55 @@
+proc div do
+    let divisor pop
+    let dividend pop
+
+    0
+    dividend divisor > dividend divisor = or while do
+        1 +
+        dividend divisor - let dividend pop
+        dividend divisor > dividend divisor = or
+    end
+end
+
+proc reverse_number do
+    let n pop
+    let partial pop
+
+    n 0 = if do
+        partial
+    end
+
+    n 0 =! if do
+        partial 10 * n 10 % +
+        n 10 div
+        reverse_number
+    end
+end
+
+proc is_palindrome do
+    dup 0 swap reverse_number = dup if do
+        true
+    end ! if do
+        false
+    end
+end
+
+
+let i 100
+let j 100
+0 take let palindromes pop
+
+true while do
+    true while do
+        j 1 + let j pop
+
+        i j * println dup is_palindrome if do
+            println
+        end
+
+        j 1000 <
+    end
+
+    i 1 + let i pop
+    100 let j pop
+    i 1000 <
+end

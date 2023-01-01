@@ -1,0 +1,36 @@
+proc main do
+    let max dup
+    let n pop 
+    let d 2
+
+    0 take let factors pop
+
+    n 1 > while do
+        n d % let cond pop 
+
+        cond 0 = if do 
+            n d / dup
+            let n pop
+            factors + let factors pop
+        end
+
+        cond 0 =! if do 
+            d 1 + let d pop
+        end
+
+        n 1 >
+    end
+
+    factors for do 
+        let factor pop
+    
+        factor max < factor 1 > and if do 
+            factor let max pop
+        end
+    end
+
+    max println
+end
+
+600851475143 main
+
